@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Dynamic styleguides</title>
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="author" content="Yann Gouffon and Marc Friederich">
+  <meta name="keyword" content="styleguide, less, css, yss, kss, oocss, antistatique, web agency">
+  <meta name="description" content="...">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="assets/revealjs/css/reveal.min.css">
+  <link rel="stylesheet" href="assets/revealjs/css/theme/serif.css" id="theme">
+  <link rel="stylesheet" href="assets/as.css">
+  <link rel="stylesheet" href="assets/revealjs/plugin/fullscreen-img.css">
+  
+  <!-- For syntax highlighting -->
+  <link rel="stylesheet" href="assets/revealjs/lib/css/zenburn.css">
+
+  <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+  <script>
+    document.write( '<link rel="stylesheet" href="assets/revealjs/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+  </script>
+
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <style type="text/css">
+    .reveal [class^="icon-"], .reveal [class*=" icon-"]{
+      font-family: FontAwesome!important;
+      font-style: normal;
+    }
+    .reveal section img {
+      background: transparent;
+      border: none;
+      box-shadow: 0 0 0 transparent;
+    }
+
+  </style>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+
+        <!-- Intro -->
+        <section>
+          <h1>Web Styleguides</h1>
+          <hr>
+          <p>7/1/2014 – Yann Gouffon and Marc Friederich</p>
+        </section>
+
+        <!-- Antistatique -->
+        <section>
+          <section data-transition="linear" data-background="#ffffff" data-background-transition="slide">
+            <div class="antistatique">
+              <object data='assets//logo-antistatique.svg' style='height:80px; width:400px;' ></object>
+            </div>
+            <h5>Antistatique is an agency providing web solutions</h5>
+            <p><a href="https://github.com/antistatique" title="GitHub"><i class="icon-github-sign"></i> github.com/antistatique</a></p>
+            <p><a href="https://twitter.com/antistatique" title="Twitter"><i class="icon-twitter-sign"></i> @antistatique</a></p>
+          </section>
+          <section data-background="assets/images/devicelab.jpg">
+          </section>
+        </section>
+
+
+        <!-- Introducing the subject -->
+        <section>
+          <section data-transition="linear" data-background="#ffffff" data-background-transition="slide">
+            <h2>You might have a communication problem</h2>
+            <img src="assets/images/smashing_catsinasack.png" alt="">
+            <small>Source : http://www.smashingmagazine.com/2011/05/13/two-cats-in-a-sack-designer-developer-discord/</small>
+          </section>
+          <section>
+            <h1>A project is a discussion</h1>
+          </section>
+          <section>
+            <h2>Documentation and deliverables help framing the discussion</h2>
+          </section>
+          <section>
+            A PSD file does not end the design phase ...
+          </section>
+        </section>
+
+        <!-- Styleguide definition -->
+        <section>
+          <section>
+            <h1>What is a styleguide</h1>
+          </section>
+          <section>
+            <ul>
+              <li class="fragment">Logo</li>
+              <li class="fragment">Colors</li>
+              <li class="fragment">Fonts</li>
+              <li class="fragment">Copy writing, guidelines, tone of voice (voiceandtone.com)</li>
+              <li class="fragment">Illustrations, icons</li>
+              <li class="fragment">Photography</li>
+            </ul>
+          </section>
+          <section>
+            <!--  provide a real life exemple -->
+          </section>
+          <section>
+            <h1>And a web styleguide ?</h1>
+          </section>
+          <section>
+            <ul>
+              <li class="fragment">Design pattern</li>
+              <li class="fragment">RWD behaviors</li>
+              <li class="fragment">...</li>
+              <li class="fragment">Like bootstrap ;-)</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>Welcome to the world of dynamic styleguide</h1>
+          </section>
+          <section>
+            <h2>Generated from your CSS</h2>
+            <h3>As documentation is generated in other languages</h3>
+          </section>
+          <section data-transition="linear" data-background="#3F3F3F" data-background-transition="slide">
+            <pre>
+              <code data-trim>
+                /*
+                ## Blockquote
+
+                Quoting
+                ````
+                <blockquote>
+                  <p>I believe in the Golden Rule — The Man with the Gold . . . Rules.</p>
+                  <span class="author">Mr. T</span> 
+                </blockquote>
+                ````
+                */
+                blockquote{
+                background-color: rgba(240, 240, 240, 0.8);
+                padding: 1.3em 1.8em;
+                ...
+              }
+            </code>
+          </pre>
+        </section>
+        <section>
+          Resulting this ..
+          <!-- @todo add a printscreen of YSS -->
+        </section>
+        <section>
+          <h1>DEMO</h1> ?
+        </section>
+        <section>
+          <h2>Benefits</h2>
+          <ul>
+            <li class="fragment">Force to think modularity</li>
+            <li class="fragment">Help communicate with designers and backend</li>
+            <li class="fragment">...</li>
+            <li class="fragment">...</li>
+            <li class="fragment">...</li>
+          </ul>
+        </section>
+      </section>
+
+      <!-- Case study -->
+      <section>
+        <section>
+          <h1>Derham</h1>
+        </section>
+        <section>
+          <h2>First version</h2>
+          <h3>Without Web styleguides</h3>
+        </section>
+        <section>
+          <ul>
+            <li class="fragment">6 developers</li>
+            <li class="fragment">New to LESS</li>
+            <li class="fragment">More than 1200 lines of CSS</li>
+            <li class="fragment">Dead code</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Second version</h2>
+          <h3>With a web styleguides</h3>
+        </section>
+        <section>
+          <ul>
+            <li class="fragment">7 developers</li>
+            <li class="fragment">LESS experts</li>
+            <li class="fragment">Dynamic style guide first</li>
+            <li class="fragment">Living documentation</li>
+            <li class="fragment">Less work for frontend devs</li>
+          </ul>
+        </section>
+      </section>
+
+      <!-- Section about why Yann choose to build is own Generator -->
+        <!-- Yann found using “Kalei Styleguide” quite limitating (slow, not RWD friendly) so he created YSS 
+      -->
+      <section>
+       <h1>YSS</h1>
+     </section>
+
+     <section>
+       <h1>It’s all about documentation … <span class="fragment">so it’s all about communication</span></h1>
+     </section>
+
+      <!--
+      should we add this ?
+      - What has change “recently”
+       - CSS preprocessor
+         - Variables, mixins, folders/files structure
+       - Bootstrap
+       - OOCSS
+       - BEM principe (Block, element, modifier)
+       - Grunt !
+      Obviously, we should think about OOCSS and modularity … think SMACSS also
+    -->
+
+
+    <!-- Fin, questions ? Ressources, Thank you -->
+    <section>
+      <h1>Questions ?</h1>
+      <p>Find this presentation on <a href="http://slidedeck.io/antistatique" title="None">slidedeck.io/antistatique</a> or <a href="http://antistatique.github.io/slides-styleguide">antistatique.github.io/slides-styleguide</a></p>
+    </section>
+    <section>
+      <h1>Ressources</h1>
+      <ul>
+        <li>“The Smashing Book #4: New Perspectives on Web Design.” Modern CSS Architecture and Front-End Development by <a href="http://csswizardry.com/">Harry Roberts</a></li>
+        <li><a href="http://24ways.org/2011/front-end-style-guides/">24ways - front-end style guides/</a></li>
+        <li><a href="http://warpspire.com/posts/kss/">KSS</a> and <a href="https://speakerdeck.com/kneath">Kneath</a></li>
+        <li><a href="https://speakerdeck.com/operatino/source-front-end-documentation-engine">Slides Frontend documentation engine</a></li>
+        <li><a href="https://speakerdeck.com/justinmorris/documenting-your-css-using-kss">Slides Documenting your CSS using KSS</a></li>  
+      </ul>
+    </section>
+    <section>
+      <h1>Thank you</h1>
+    </section>
+
+  </div>
+</div>
+
+<script src="assets/revealjs/lib/js/head.min.js"></script>
+<script src="assets/revealjs/js/reveal.min.js"></script>
+
+<script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+        parallaxBackgroundImage: 'assets/images/bg-winter.jpg',
+        parallaxBackgroundSize: '2000px 1124px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+        { src: 'assets/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        // { src: 'assets/revealjs/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        // { src: 'assets/revealjs/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'assets/revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'assets/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+        // { src: 'assets/revealjs/plugin/fullscreen-img/fullscreen-img.js', async: true, condition: function() { return !!document.body.classList; } },
+        { src: 'assets/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+          // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+          ]
+        });
+
+      </script>
+      youpi
+    </body>
+    </html>
