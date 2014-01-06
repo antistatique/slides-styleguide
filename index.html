@@ -105,7 +105,8 @@
               <li class="fragment">Logo</li>
               <li class="fragment">Colors</li>
               <li class="fragment">Fonts</li>
-              <li class="fragment">Copy writing, guidelines, tone of voice (voiceandtone.com)</li>
+              <li class="fragment">Copy writing, guidelines</li>
+              <li class="fragment">tone of voice (voiceandtone.com)</li>
               <li class="fragment">Illustrations, icons</li>
               <li class="fragment">Photography</li>
             </ul>
@@ -120,9 +121,12 @@
             <ul>
               <li class="fragment">Design pattern</li>
               <li class="fragment">RWD behaviors</li>
+              <li class="fragment">Browser behaviors</li>
               <li class="fragment">...</li>
-              <li class="fragment">Like bootstrap ;-)</li>
             </ul>
+          </section>
+          <section>
+            <img src="img/bootstrap.png" alt="bootstrap">
           </section>
         </section>
 
@@ -132,45 +136,17 @@
           </section>
           <section>
             <h2>Generated from your CSS</h2>
-            <h3>As documentation is generated in other languages</h3>
+            <h3>A documentation is generated in other languages</h3>
           </section>
-          <section data-transition="linear" data-background="#3F3F3F" data-background-transition="slide">
-            <pre>
-              <code data-trim>
-                /*
-                ## Blockquote
-
-                Quoting
-                ````
-                <blockquote>
-                  <p>I believe in the Golden Rule — The Man with the Gold . . . Rules.</p>
-                  <span class="author">Mr. T</span> 
-                </blockquote>
-                ````
-                */
-                blockquote{
-                background-color: rgba(240, 240, 240, 0.8);
-                padding: 1.3em 1.8em;
-                ...
-              }
-            </code>
-          </pre>
-        </section>
-        <section>
-          Resulting this ..
-          <!-- @todo add a printscreen of YSS -->
-        </section>
-        <section>
-          <h1>DEMO</h1> ?
-        </section>
         <section>
           <h2>Benefits</h2>
           <ul>
             <li class="fragment">Force to think modularity</li>
-            <li class="fragment">Help communicate with designers and backend</li>
+            <li class="fragment">Better communication between frontend and backend dev</li>
+            <li class="fragment">Living documentation</li>
+            <li class="fragment">RWD testing platform</li>
             <li class="fragment">...</li>
-            <li class="fragment">...</li>
-            <li class="fragment">...</li>
+            <li class="fragment">A better web !</li>
           </ul>
         </section>
       </section>
@@ -211,7 +187,66 @@
         <!-- Yann found using “Kalei Styleguide” quite limitating (slow, not RWD friendly) so he created YSS 
       -->
       <section>
-       <h1>YSS</h1>
+        <section>
+           <h1>YSS</h1>
+        </section>
+        <section>
+          <h1>Existing tools</h1>
+          <h4>KSS (<a href="http://warpspire.com/kss/">http://warpspire.com/kss/)</a></h4>
+          <img src="img/kss.png" alt="kss">
+        </section>
+        <section>
+          <h1>Existing tools</h1>
+          <h4>StyleDocco (<a href="http://jacobrask.github.io/styledocco/">http://jacobrask.github.io/styledocco/)</a></h4>
+          <img src="img/styledocco.png" alt="styledocco">
+        </section>
+        <section>
+          <h1>Existing tools</h1>
+          <h4>Pears (<a href="http://pea.rs">http://pea.rs)</a></h4>
+          <img src="img/pears.png" alt="pears">
+        </section>
+        <section>
+          <h1>Existing tools</h1>
+          <h4>Kalei Styleguide (<a href="http://warpspire.com/kss/">http://warpspire.com/kss/)</a></h4>
+          <img src="img/kalei.png" alt="kalei">
+        </section>
+        <section>
+          <h3>-> No perfect tool</h3>
+          <h3 class="fragment">So I have to create one<br>
+            <img src="img/create.jpg" alt="">
+          </h3>
+        </section>
+        <section>
+          <img src="img/yss.png" alt="">
+        </section>
+        <section data-transition="linear" data-background="#3F3F3F" data-background-transition="slide">
+            <pre>
+              <code>/*
+# Text components
+## Titles
+````
+<h1>My title number 1</h1>
+<h2>My title number 2</h2>
+<h3>My title number 3</h3>
+<h4>My title number 4</h4>
+<h5>My title number 5</h5>
+<h6>My title number 6</h6>
+````
+*/
+
+h1, h2, h3, h4, h5, h6 {
+  color: #262626;
+  font-weight: 700;
+}</code>
+          </pre>
+        </section>
+        <section>
+          Resulting this ..
+          <!-- @todo add a printscreen of YSS -->
+        </section>
+        <section>
+          <a href="http://yago.io/project/yss/"><h1>DEMO</h1></a>
+        </section>
      </section>
 
      <section>
