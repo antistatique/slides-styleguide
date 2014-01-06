@@ -1,0 +1,103 @@
+pre {
+  background: #1f1f1f;
+  word-wrap: break-word;
+  margin: 0px 0px 30px 0px;
+  color: #f3f3f3;
+  font-size: 14px;
+  overflow-x: auto;
+  position: relative;
+  line-height: 1.4em;
+  white-space: pre;
+  padding: 25px !important;
+}
+
+pre, code {
+  font-family: Monaco, monospace; }
+
+pre .comment {
+  color: #f3f3f3; }
+
+pre .constant.numeric {
+  color: #fd971f; }
+
+pre .constant {
+  color: #66d9ef; }
+
+pre .constant.symbol, pre .constant.language {
+  color: #fd971f; }
+
+pre .storage {
+  color: #fd971f; }
+
+pre .string {
+  color: #a6e22e; }
+
+pre .string.regexp {
+  color: #fd971f; }
+
+pre .keyword, pre .selector, pre .storage {
+  color: #f92672; }
+
+pre .inherited-class {
+  color: #fd971f; }
+
+pre .entity {
+  color: #f92672; }
+
+pre .support {
+  color: #66d9ef; }
+
+pre .support.magic {
+  color: #fd971f; }
+
+pre .variable {
+  color: #66d9ef; }
+
+pre .function {
+  color: #fd971f; }
+
+pre .entity.class {
+  color: #a6e22e; }
+
+pre .support.class-name, pre .support.type {
+  color: #66d9ef; }
+
+pre .tag, pre .operator {
+  color: #f3f3f3; }
+
+pre .tag-name {
+  color: #f92672; }
+
+pre .quote, pre .value {
+  color: #e6db74; }
+
+pre .attribute {
+  color: #a6e22e; }
+
+.rainbow-header {
+  display: none; }
+
+.rainbow-line {
+  display: block;
+  width: auto; }
+  .rainbow-line span {
+    white-space: pre; }
+  .rainbow-line:hover {
+    background-color: #393939; }
+    .rainbow-line:hover .rainbow-line-number {
+      background-color: #393939; }
+  .rainbow-line .rainbow-line-number {
+    text-align: right;
+    display: block;
+    width: 20px;
+    float: left;
+    vertical-align: top; }
+    .rainbow-line .rainbow-line-number::before {
+      content: attr(data-number);
+      color: #505050; }
+  .rainbow-line .rainbow-line-code {
+    padding-left: 1em;
+    display: block;
+    width: 100%;
+    height: 1.4em;
+    margin-left: 25px; }

@@ -21,7 +21,10 @@
   <link rel="stylesheet" href="assets/revealjs/plugin/fullscreen-img.css">
   
   <!-- For syntax highlighting -->
-  <link rel="stylesheet" href="assets/revealjs/lib/css/zenburn.css">
+  <!--<link rel="stylesheet" href="assets/revealjs/lib/css/zenburn.css">-->
+
+  <!-- For syntax highlighting -->
+  <link rel="stylesheet" href="assets/rainbow.css">
 
   <!-- If the query includes 'print-pdf', use the PDF print sheet -->
   <script>
@@ -221,7 +224,8 @@
         </section>
         <section data-transition="linear" data-background="#3F3F3F" data-background-transition="slide">
             <pre>
-              <code>/*
+              <code data-language="css">
+/*
 # Text components
 ## Titles
 ````
@@ -311,7 +315,7 @@ h1, h2, h3, h4, h5, h6 {
         { src: 'assets/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
         // { src: 'assets/revealjs/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
         // { src: 'assets/revealjs/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-        { src: 'assets/revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        //{ src: 'assets/revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
         { src: 'assets/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
         // { src: 'assets/revealjs/plugin/fullscreen-img/fullscreen-img.js', async: true, condition: function() { return !!document.body.classList; } },
         { src: 'assets/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
@@ -321,6 +325,7 @@ h1, h2, h3, h4, h5, h6 {
         });
 
       </script>
-      youpi
+      <script src="assets/rainbowjs/rainbow.min.js"></script>
+      <script src="assets/rainbowjs/language/css.js"></script>
     </body>
     </html>
