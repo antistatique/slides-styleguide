@@ -83,16 +83,17 @@
         <!-- Introducing the subject -->
         <section>
           <section data-transition="linear" data-background="#ffffff" data-background-transition="slide">
-            <h2>You might have a communication problem</h2>
+            <h2>You might have <br/>a communication problem</h2>
             <img src="assets/images/smashing_catsinasack.png" alt="">
             <small>Source : http://www.smashingmagazine.com/2011/05/13/two-cats-in-a-sack-designer-developer-discord/</small>
           </section>
           <section>
-            <h1>A project is a discussion</h1>
+            <h2>A project is a discussion</h2>
           </section>
           <section>
-            <h2>Documentation and deliverables help framing the discussion</h2>
+            <h2>Documentation and deliverables help framing this discussion</h2>
           </section>
+          <section data-background="img/process.jpg"></section>
           <section>
             A PSD file does not end the design phase ...
           </section>
@@ -108,17 +109,17 @@
               <li class="fragment">Logo</li>
               <li class="fragment">Colors</li>
               <li class="fragment">Fonts</li>
-              <li class="fragment">Copy writing, guidelines</li>
-              <li class="fragment">tone of voice (voiceandtone.com)</li>
+              <li class="fragment">Copywriting, guidelines</li>
+              <li class="fragment">Tone of voice (voiceandtone.com)</li>
               <li class="fragment">Illustrations, icons</li>
-              <li class="fragment">Photography</li>
+              <li class="fragment">Photographies</li>
             </ul>
           </section>
           <section>
             <img src="img/skype.png" alt="skype">
           </section>
           <section>
-            <h1>And a web styleguide ?</h1>
+            <h2>And a web styleguide ?</h2>
           </section>
           <section>
             <ul>
@@ -135,20 +136,35 @@
 
         <section>
           <section>
-            <h1>Welcome to the world of dynamic styleguide</h1>
+            <h1>Welcome to the world of dynamic styleguides</h1>
           </section>
           <section>
-            <h2>Generated from your CSS</h2>
-            <h3>A documentation is generated in other languages</h3>
+            <h2>Generated from the code</h2>
+            <p>Like JavaDoc, PHPDoc, ...</p>
           </section>
+          <section data-transition="linear" data-background="#3F3F3F" data-background-transition="slide">
+            <pre>
+              <code data-language="css">
+/*
+# Button
+````
+<a class="btn">Action</a>
+````
+*/
+
+.btn{
+  color: green;
+}
+</code>
+          </pre>
+        </section>
         <section>
           <h2>Benefits</h2>
           <ul>
-            <li class="fragment">Force to think modularity</li>
-            <li class="fragment">Better communication between frontend and backend dev</li>
+            <li class="fragment">Force you to think by reusable modules</li>
+            <li class="fragment">Better communication between designers and developers</li>
             <li class="fragment">Living documentation</li>
             <li class="fragment">RWD testing platform</li>
-            <li class="fragment">...</li>
             <li class="fragment">A better web !</li>
           </ul>
         </section>
@@ -157,19 +173,26 @@
       <!-- Case study -->
       <section>
         <section>
-          <h1>Derham</h1>
+          <h1>Case study</h1>
         </section>
         <section>
-          <h2>First version</h2>
-          <h3>Without Web styleguides</h3>
+          <h2>Derham – First version</h2>
+          <h3>Without web styleguides</h3>
         </section>
         <section>
           <ul>
             <li class="fragment">6 developers</li>
             <li class="fragment">New to LESS</li>
-            <li class="fragment">More than 1200 lines of CSS</li>
+            <li class="fragment">More than 9000 lines of CSS</li>
             <li class="fragment">Dead code</li>
           </ul>
+        </section>
+        <section data-transition="linear" data-background="#3F3F3F" data-background-transition="slide">
+            <pre>
+              <code data-language="css">
+ul.nav-main .nav-sub .nav-sub-top, ul.nav-language .nav-sub .nav-sub-top {}
+              </code>
+          </pre>
         </section>
         <section>
           <h2>Second version</h2>
@@ -177,11 +200,11 @@
         </section>
         <section>
           <ul>
-            <li class="fragment">7 developers</li>
-            <li class="fragment">LESS experts</li>
+            <li class="fragment">OOCSS and LESS experts</li>
             <li class="fragment">Dynamic style guide first</li>
             <li class="fragment">Living documentation</li>
-            <li class="fragment">Less work for frontend devs</li>
+            <li class="fragment">Designer review</li>
+            <li class="fragment">Less work for frontend developers</li>
           </ul>
         </section>
       </section>
@@ -192,31 +215,31 @@
       <section>
         <section>
            <h1>YSS</h1>
+           <h2>Web styleguides generator</h2>
         </section>
         <section>
-          <h1>Existing tools</h1>
+          <h2>Existing tools</h2>
+        </section>
+        <section>
           <h4>KSS (<a href="http://warpspire.com/kss/">http://warpspire.com/kss/)</a></h4>
           <img src="img/kss.png" alt="kss">
         </section>
         <section>
-          <h1>Existing tools</h1>
           <h4>StyleDocco (<a href="http://jacobrask.github.io/styledocco/">http://jacobrask.github.io/styledocco/)</a></h4>
           <img src="img/styledocco.png" alt="styledocco">
         </section>
         <section>
-          <h1>Existing tools</h1>
           <h4>Pears (<a href="http://pea.rs">http://pea.rs)</a></h4>
           <img src="img/pears.png" alt="pears">
         </section>
         <section>
-          <h1>Existing tools</h1>
           <h4>Kalei Styleguide (<a href="http://warpspire.com/kss/">http://warpspire.com/kss/)</a></h4>
           <img src="img/kalei.png" alt="kalei">
         </section>
         <section>
           <h3>No perfect tool</h3>
           <br>
-          <h3 class="fragment">-> So I have to create one<br><br>
+          <h3 class="fragment">-> So I had to create one<br><br>
             <img src="img/pick.png" alt="">
           </h3>
         </section>
@@ -263,7 +286,8 @@ h1, h2, h3, h4, h5, h6 {
      </section>
 
      <section>
-       <h1>It’s all about documentation … <span class="fragment">so it’s all about communication</span></h1>
+       <h2>It’s all about documentation … <span class="fragment">so it’s all about communication</span></h2>
+       <h3 class="fragment">CSS the right way!</h3>
      </section>
 
       <!--
@@ -288,7 +312,7 @@ h1, h2, h3, h4, h5, h6 {
       <h1>Ressources</h1>
       <ul>
         <li>“The Smashing Book #4: New Perspectives on Web Design.” Modern CSS Architecture and Front-End Development by <a href="http://csswizardry.com/">Harry Roberts</a></li>
-        <li><a href="http://24ways.org/2011/front-end-style-guides/">24ways - front-end style guides/</a></li>
+        <li><a href="http://24ways.org/2011/front-end-style-guides/">24ways - front-end style guides</a></li>
         <li><a href="http://warpspire.com/posts/kss/">KSS</a> and <a href="https://speakerdeck.com/kneath">Kneath</a></li>
         <li><a href="https://speakerdeck.com/operatino/source-front-end-documentation-engine">Slides Frontend documentation engine</a></li>
         <li><a href="https://speakerdeck.com/justinmorris/documenting-your-css-using-kss">Slides Documenting your CSS using KSS</a></li>  
